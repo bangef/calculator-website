@@ -1,0 +1,131 @@
+/*
+1. Apabila class .equal-sign diklik class .result2,.result1 {height: 50%} dan hasilnya ada di result bawah, dan riwayatnya ada di result atas. (✔)
+*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap");
+
+:root {
+  font-size: 16px;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+}
+
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 95vh;
+}
+
+.calc-wrapper {
+  width: 375px;
+  height: 700px;
+  background-color: #22252d;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.calc-result {
+  width: 100%;
+  height: 294px;
+}
+
+.result2 {
+  font-size: 1.5rem;
+  width: 100%;
+  height: 50%;
+  border: none;
+  background-color: transparent;
+  border-radius: 30px;
+  color: white;
+  text-align: right;
+  padding: 2.5em 0.5em 0em 2em;
+  border: none;
+}
+
+.result1 {
+  width: 100%;
+  height: 50%;
+  border: none;
+  background-color: transparent;
+  border-radius: 30px;
+  color: white;
+  font-size: 2.5rem;
+  text-align: right;
+  padding: 0.5em;
+}
+
+button {
+  border: none;
+}
+
+button:hover {
+  cursor: pointer;
+  font-size: 1.5rem;
+}
+
+.btn-wrapper {
+  width: 375px;
+  height: 482px;
+  background-color: #292d36;
+  border-radius: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-row {
+  width: 314px;
+  height: 377px;
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.btn {
+  width: 65px;
+  height: 65px;
+  background-color: #272b33;
+  border-radius: 20px;
+  font-size: 1rem;
+  text-align: center;
+  line-height: 65px;
+}
+
+.operator,
+.equal-sign,
+.result2 > span {
+  color: #eb6666;
+}
+
+.number,
+.zero-btn,
+.decimal,
+.prevClear {
+  color: #fff;
+}
+
+.all-clear,
+.plus-minus-sign,
+.percent {
+  color: #26ffd9;
+}
+
+footer {
+  text-align: center;
+  color: #22252d;
+}
+
+footer > a {
+  text-decoration: none;
+  color: #22252d;
+}
